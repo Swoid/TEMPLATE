@@ -6,3 +6,5 @@
 *.sassc
 
 css/main.css
+
+*.scssc
