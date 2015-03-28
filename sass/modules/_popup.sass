@@ -1,2 +1,46 @@
 .popup
 	display: none
+	background-color: $blue
+	position: absolute
+	z-index: 3
+	width: 300px
+	left: -140px
+	top: 50px
+	border-radius: 6px
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2)
+	padding: 20px 15px
+	box-sizing: border-box
+	text-align: left
+
+	&.show
+		display: block
+
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		top: -15px
+		left: calc(50% - 25px)
+		width: 50px
+		height: 16px
+		background: url(../img/speech-arrow-top.svg) no-repeat
+		background-size: 50px 16px
+
+	li
+		margin: 10px 0
+		position: relative
+
+		span
+			font-size: 12px
+			display: inline-block
+			vertical-align: top
+			margin-top: 6px
+			margin-left: 10px
+			color: $lightgray
+			width: 160px
+
+		.time
+			color: $green
+			font-weight: bold
+			width: 25px
+			padding-top: 7px
